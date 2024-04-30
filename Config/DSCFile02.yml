@@ -1,13 +1,13 @@
 Services:
   - Name: WinRM
     Status: Running
-    StartupType: Manual
+    StartType: Automatic
   - Name: Spooler
     Status: Running
-    StartupType: Automatic
+    StartType: Automatic
 Disks:
   - DriveLetter: C
-    FreeSpace: 1400GB
+    FreeSpace: 10GB
   - DriveLetter: D
     FreeSpace: 60%
 Processes:
