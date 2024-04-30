@@ -100,6 +100,8 @@ function Start-Monitoring {
         }
         $results
 
-    } -Verbose
+    } -ErrorVariable connectionErrors
+
+    Write-Error "Failed to connect to '$($connectionErrors.TargetObject)'"
 
 }
