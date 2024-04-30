@@ -1,0 +1,20 @@
+Services:
+  - Name: WinRM
+    Status: Running
+    StartupType: Manual
+  - Name: Spooler
+    Status: Running
+    StartupType: Automatic
+Disks:
+  - DriveLetter: C
+    FreeSpace: 1400GB
+  - DriveLetter: D
+    FreeSpace: 60%
+Processes:
+  - Name: svchost
+    Status: Running
+  - Name: explorer
+    Status: Running
+RegistryValues:
+  - Path: HKLM:\\Software\Microsoft\Windows\CurrentVersion\Run
+    Value: C:\Program Files\MyApp\MyApp.exe
